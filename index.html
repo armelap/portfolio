@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Armela Portfolio</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    #gallery img {
+        transition: transform 0.3s ease; /* Smooth transition effect */
+    }
+
+    #gallery img:hover {
+        transform: scale(1.05); /* Scale image to 105% on hover */
+        background-color: #f9f6f2;
+    }
+    body{
+        font-family: 'Lora',serif;
+        background-color: whitesmoke;
+    }
+    .flex-column {
+        max-width : 260px;
+    }
+
+    .container {
+        background: white
+    }
+
+    .img {
+        margin: 5px;
+    }
+
+    .logo img{
+        width:100%;
+        height:auto;
+        margin-top:90px;
+        margin-bottom:40px;
+    }
+    .navbar-nav .nav-item .nav-link:hover{
+        color:rgb(76, 155, 228);
+    }
+    h3{
+        color: rgb(23,9,55);
+    }
+
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-shadow: 0 5px 10px rgba(0,0,1,1);
+    }
+    .navbar-nav {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        color: #333;
+        font-size: 16px;
+        padding: 8px 20px;
+        transition: color 0.3s ease;
+        text-align: center;
+    }
+    .custom-button {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:rgb(76, 155, 228);;
+        transition: transform 0.3s ease;
+    }
+    .custom-button:hover {
+        transform: translateX(-50%) scale(1.05);
+
+    }
+
+    /* Styles for small screens */
+    @media (max-width: 576px) {
+        .custom-button {
+          /** Slightly increase button text size for medium screens *!*/
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%) scale(0.75);
+            background-color:rgb(76, 155, 228);;
+            transition: transform 0.3s ease;
+        }
+        .custom-button:hover{
+            transform: translateX(-50%) scale(0.85);
+        }
+
+    }
+    .footer{
+        background-color: #34495e;
+        margin-top: 20px;
+        color: white;
+    }
+
+
+</style>
+
+<body>
+<!---navbar--->
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">
+            <strong>ARMELA PRIFTI</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navi">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">My work</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact me</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</nav>
+<section id="aboutus">
+<header class="header">
+    <div class="position-relative text-center">
+        <a class="logo">
+            <img src="THE%20BEST%20MARKETING.png" alt="logo" class="img-fluid">
+        </a>
+        <button type="button" onclick="window.location.href='about.html'" class="btn btn-outline-dark btn-lg custom-button"
+               >
+            About Me
+        </button>
+    </div>
+</header>
+</section>
+
+
+<div class="container" id="gallery">
+    <h3 class="text-center mb-5">My work</h3>
+    <div class="row justify-content-center">
+        <!-- First Column -->
+
+        <div class="col-md-4 d-flex flex-column align-items-center gallery-item">
+            <a href="campaign.html" target="_blank">
+                <img src="img/360°%20Campaign%20Management.png" class="img-fluid mb-3" alt="360° Campaign Management">
+            </a>
+            <p>360° Campaign Management</p>
+            <a href="video.html" target="_blank">
+                <img src="img/Video%20Content.png" class="img-fluid mb-3" alt="Video Content">
+            </a>
+            <p>Video Content</p>
+
+            <a href="img/Branding.png" target="_blank">
+                <img src="img/Branding.png" class="img-fluid mb-3" alt="Branding">
+            </a>
+            <p>Branding</p>
+
+
+
+
+        </div>
+
+        <!-- Second Column -->
+        <div class="col-md-4 d-flex flex-column align-items-center gallery-item">
+            <a href="social.html" target="_blank">
+                <img src="img/social%20media%20marketing%20strategy.png" class="img-fluid mb-3" alt="Social Media Marketing Strategy">
+            </a>
+            <p>Social Media Marketing </p>
+
+            <a href="img/Print%20Materials.png" target="_blank">
+            <img src="img/Print%20Materials.png" class="img-fluid mb-3" alt="Print Materials">
+            </a>
+            <p>Print Materials</p>
+
+            <a href="img/events.png" target="_blank">
+                <img src="img/events.png" class="img-fluid mb-3" alt="Events">
+            </a>
+            <p>Events</p>
+
+
+
+        </div>
+
+        <!-- Third Column -->
+        <div class="col-md-4 d-flex flex-column align-items-center gallery-item">
+            <a href="content.html" target="_blank">
+                <img src="img/content%20creation.png" class="img-fluid mb-3" alt="Content Creation">
+            </a>
+            <p>Content Creation</p>
+            <a href="img/Copywriting.png" target="_blank">
+                <img src="img/Copywriting.png" class="img-fluid mb-3" alt="Copywriting">
+            </a>
+            <p>Copywriting</p>
+
+            <a href="img/Bold%20Displays.png" target="_blank">
+            <img src="img/Bold%20Displays.png" class="img-fluid mb-3" alt="Bold Displays">
+           </a>
+            <p>Bold Displays</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<footer class="footer" id="footer">
+    <div ><br>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="social-icon">
+                    <a ><i class="fa fa-facebook"></i></a>
+                    <a ><i class="fa fa-instagram"></i></a>
+                    <a ><i class="fa fa-linkedin"></i></a>
+
+                </div>
+                <div class="copyright">
+                    <p class="white"> copyright &copy; <b>Armela Prifti</b></p>
+                    <a href="tel:+13066209179"><i class="fa fa-phone"></i> +13066209179</a> &nbsp;
+                    <a href="mailto:your-email@example.com"><i class="fa fa-envelope-o"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
